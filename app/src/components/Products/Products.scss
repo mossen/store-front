@@ -53,5 +53,15 @@
   .btn {
     display: block;
     margin: 40px auto;
+
+    &.border {
+      background-color: rgba(10, 10, 10, 0.31);
+      border: 1px solid #909090;
+      color: #cecece !important;
+
+      &:hover {
+        cursor: default;
+      }
+    }
   }
 }

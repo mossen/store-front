@@ -19,10 +19,10 @@ class Products extends Component {
         )
     }
 
-    isItemAddedToCart(productIndex){
+    isItemAddedToCart(productIndex) {
         if (this.props.items.length < 0) return false
 
-        for (let i in this.props.items){
+        for (let i in this.props.items) {
             if (this.props.items[i].productIndex == productIndex) return true
         }
         return false
@@ -53,15 +53,21 @@ class Products extends Component {
                                         <a className={[s.btn, "btn"].join(' ')}>view details</a>
                                     </LinkContainer>
                                     {
-                                        this.isItemAddedToCart(productIndex) ? null :
-                                         <span
+                                        this.isItemAddedToCart(productIndex) ?
+                                            <span
+                                                className={[s.btn, s.border, "btn secondary"].join(' ')}
+                                            >
+                                                added to cart
+                                            </span>
+                                            :
+                                            <span
                                                 onClick={() => {
-                                                    this.handleAddToCart(product, productIndex)
+                                                this.handleAddToCart(product, productIndex)
                                                 }}
                                                 className={[s.btn, "btn secondary"].join(' ')}
                                             >
                                                 add to cart
-                                         </span>
+                                            </span>
                                     }
                                 </div>
                             </div>

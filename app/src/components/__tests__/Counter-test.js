@@ -47,7 +47,7 @@ describe('counter', () => {
 
     it('should render the correct className', () => {
         const styles = require('components/Counter/Counter.scss');
-        expect(styles.infoBar).to.be.a('string');
-        expect(dom.className).to.include(styles.infoBar);
+        expect(styles.Counter).to.be.a('string');
+        expect(dom.className).to.include(styles.Counter);
     });
 });
