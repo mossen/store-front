@@ -1,0 +1,101 @@
+@import "../../theme/variables.scss";
+
+.dropDownCart {
+  width: 370px;
+  padding: 20px;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  .product {
+    width: 100%;
+    position: relative;
+    height: 100px;
+
+    p {
+      margin-bottom: 3px;
+    }
+
+    .remove {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: .7;
+      transition: .3s;
+      padding-left: 5px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+
+    .thumbnail {
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+
+    .title {
+      display: inline-block;
+      word-break: keep-all;
+      max-width: 215px;
+    }
+
+    .amount {
+      display: inline-block;
+      margin-left: 5px;
+      text-transform: lowercase;
+    }
+
+    .brand {
+      display: block;
+      color: $grey;
+    }
+
+    .price {
+      display: block;
+    }
+
+  }
+
+  .cartFooter {
+    border-top: 1px solid $grey;
+
+    .totalWrapper{
+      display: block;
+      height: 30px;
+      margin-top: 10px;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .btn {
+      height: 50px;
+      padding-top: 13px;
+    }
+
+    .btnBorder {
+      height: 50px;
+      padding-top: 13px;
+      background: transparent;
+      color: $black;
+      border: 1px solid;
+      margin-right: 3px;
+    }
+  }
+
+  .scroll {
+    overflow: hidden;
+    max-height: 260px;
+    overflow-y: scroll;
+    padding-right: 15px;
+  }
+}

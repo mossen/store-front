@@ -1,0 +1,49 @@
+@import "../../theme/variables.scss";
+
+.counter {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.amount {
+  width: 50px;
+  height: 55px;
+  background: #d6d6d6;
+  display: inline-block;
+  margin-right: 3px;
+  line-height: 55px;
+  color: $grey;
+  text-align: center;
+}
+
+.btnWrapper {
+  width: 25px;
+  display: inline-block;
+  vertical-align: top;
+
+  .counterBtn {
+    width: 25px;
+    height: 26px;
+    background: #bdbdbd;
+    display: block;
+    vertical-align: top;
+    line-height: 26px;
+    font-size: 11px;
+    color: $grey;
+    transition: .3s;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      color: $grey-light;
+    }
+  }
+
+  .increase {
+    margin-bottom: 3px;
+  }
+
+  .decrease {
+    vertical-align: bottom;
+  }
+}

@@ -1,0 +1,86 @@
+@import "../../theme/variables.scss";
+
+.header {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.card {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fbfbfb;
+  padding: 50px 20px 70px;
+  color: $grey;
+  text-transform: uppercase;
+
+  a {
+    color: $grey;
+
+    &:hover {
+      color: $grey-light;
+    }
+  }
+}
+
+.product {
+  td {
+    padding: 30px 0 50px !important;
+  }
+
+  .title {
+    color: $black;
+  }
+
+  .thumbnail {
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-height: 80px;
+  }
+
+  .detailsWrapper {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .remove {
+    opacity: .7;
+    transition: .3s;
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+
+}
+
+.tableFooter {
+  border: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  padding: 20px;
+  height: 125px;
+  margin-bottom: 20px;
+}
+
+.pricing {
+  width: 50%;
+  float: right;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.floatRight{
+  float: right;
+}

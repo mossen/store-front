@@ -1,0 +1,59 @@
+@import "../../theme/variables.scss";
+
+.breadcrumb {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  text-transform: uppercase;
+
+  span {
+    color: $grey;
+  }
+}
+
+.product {
+  margin-bottom: 50px;
+}
+
+.thumbnail {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.details {
+  text-align: center;
+
+  .brand {
+    color: $grey;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  .price {
+    color: $grey-light;
+  }
+
+  .description {
+    color: $grey;
+    border-bottom: 1px solid $grey;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  height: 55px;
+  margin-left: 15px;
+  padding-top: 17px;
+}

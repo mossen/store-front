@@ -1,0 +1,40 @@
+@import "../../theme/variables.scss";
+
+.banner {
+  margin-bottom: 50px;
+
+  h1 {
+    font-size: 19px;
+    border-bottom: 1px solid $white;
+    display: inline-block;
+    margin-top: 120px;
+    line-height: 40px;
+  }
+
+  .plate {
+    background: url('./plates-header.jpg') no-repeat;
+    width: 25%;
+    height: 340px;
+  }
+
+  .left {
+    float: left;
+    background-position: left;
+  }
+
+  .right {
+    float: right;
+    background-position: right;
+  }
+
+  .content {
+    width: 50%;
+    height: 340px;
+    display: inline-block;
+    background: $black-light;
+    color: $white;
+    padding: 0 40px;
+    text-align: center;
+  }
+
+}

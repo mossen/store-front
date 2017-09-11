@@ -1,0 +1,49 @@
+/**
+ * Override Bootstrap styles that you can't modify via variables here.
+ *
+ */
+@import "./plugins";
+@import "./variables";
+
+.navbar-brand {
+  position: relative;
+  padding-left: 50px;
+}
+
+.navbar-default {
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #ffffff;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #777;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+  color: #333;
+  background-color: transparent;
+}
+
+.btn {
+  background-color: $black;
+  color: $white;
+  width: 160px;
+  height: 35px;
+  border-radius: 0;
+  text-transform: uppercase;
+  transition: .3s;
+
+  &:hover {
+    color: $grey-light !important;
+  }
+}
+
+.btn {
+  &.secondary {
+    background-color: $grey-dark;
+    color: $white;
+  }
+}

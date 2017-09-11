@@ -1,0 +1,32 @@
+@import "../../theme/variables.scss";
+
+.app {
+  nav :global(.fa) {
+    font-size: 2em;
+    line-height: 20px;
+  }
+  .center {
+    text-align: center;
+  }
+  .floatNone {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.main {
+  padding-top: 56px;
+}
+
+.logo {
+  width: 85px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.appContent {
+  margin: 50px 0; // for fixed navbar
+}
+
